@@ -6,4 +6,7 @@
     <string name="visa_category_text">Visa</string>
     <string name="buses_category_text">Buses</string>
     <string name="location">New York, NY</string>
+    <string name="button_category">Popular Categories</string>
+    <string name="button_see_all">See All</string>
+    <string name="button_recommended">Recommended</string>
 </resources>
