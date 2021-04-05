@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">P1</string>
+    <string name="search_bar">Search</string>
+    <string name="flights_category_text">Flights</string>
+    <string name="hotels_category_text">Hotels</string>
+    <string name="visa_category_text">Visa</string>
+    <string name="buses_category_text">Buses</string>
+    <string name="location">New York, NY</string>
 </resources>

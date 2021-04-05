@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/button2"
@@ -75,17 +76,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        app:menu="@menu/menu_bottom_navigation"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation" />
+
+
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -106,16 +110,16 @@
             android:padding="5dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                app:srcCompat="@drawable/plane" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Flights" />
+                android:text="@string/flights_category_text" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,16 +129,16 @@
             android:padding="5dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                app:srcCompat="@drawable/hotel" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Hotels" />
+                android:text="@string/hotels_category_text" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,16 +148,16 @@
             android:padding="5dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                app:srcCompat="@drawable/passport" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Visa" />
+                android:text="@string/visa_category_text" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,16 +167,16 @@
             android:padding="5dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_media_play" />
+                app:srcCompat="@drawable/bus" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Buses" />
+                android:text="@string/buses_category_text" />
         </LinearLayout>
 
     </LinearLayout>
@@ -196,5 +200,7 @@
         android:text="See All"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
