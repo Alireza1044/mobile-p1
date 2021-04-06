@@ -125,18 +125,20 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageButton
+           <!-- <ImageButton
                 android:id="@+id/imageButton1"
                 style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/plane" />
+                app:srcCompat="@drawable/plane" />-->
 
-            <TextView
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
+                android:background="@drawable/bg_white_rounded"
+                android:drawableTop="@drawable/plane"
                 android:text="@string/flights_category_text"
                 android:textColor="@color/white"
                 app:autoSizeTextType="uniform" />
@@ -148,18 +150,20 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageButton
+           <!-- <ImageButton
                 android:id="@+id/imageButton2"
                 style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/hotel" />
+                app:srcCompat="@drawable/hotel" />-->
 
-            <TextView
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
+                android:background="@drawable/bg_white_rounded"
+                android:drawableTop="@drawable/hotel"
                 android:text="@string/hotels_category_text"
                 android:textColor="@color/white"
                 app:autoSizeTextType="uniform" />
@@ -171,18 +175,20 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageButton
+            <!--<ImageButton
                 android:id="@+id/imageButton3"
                 style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/passport" />
+                app:srcCompat="@drawable/passport" />-->
 
-            <TextView
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
+                android:background="@drawable/bg_white_rounded"
+                android:drawableTop="@drawable/passport"
                 android:text="@string/visa_category_text"
                 android:textColor="@color/white"
                 app:autoSizeTextType="uniform" />
@@ -194,16 +200,18 @@
             android:orientation="vertical"
             android:padding="5dp">
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                style="@android:style/Widget.Holo.ImageButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/bus" />
+<!--            <ImageButton-->
+<!--                android:id="@+id/imageButton4"-->
+<!--                style="@android:style/Widget.Holo.ImageButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:srcCompat="@drawable/bus" />-->
 
-            <TextView
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_rounded"
+                android:drawableTop="@drawable/bus"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
                 android:text="@string/buses_category_text"
