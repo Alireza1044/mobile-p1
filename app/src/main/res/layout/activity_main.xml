@@ -4,27 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_insetEdge="none"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/button"
+        style="@android:style/Widget.Holo.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 
 
-    <Button
+    <ImageButton
         android:id="@+id/button2"
+        style="@android:style/Widget.Holo.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Button"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -35,7 +40,9 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:showDividers="middle"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -44,26 +51,29 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:padding="2dp"
-            app:srcCompat="@drawable/location_icon_android_15" />
+            app:srcCompat="@drawable/location" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
             android:padding="2dp"
-            android:text="@string/location" />
+            android:text="@string/location"
+            android:textColor="@color/white"
+            app:autoSizeTextType="uniform" />
     </LinearLayout>
 
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:queryHint="Search"
-        android:iconifiedByDefault="false"
         android:background="@drawable/bg_white_rounded"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -72,9 +82,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/button_category"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
@@ -114,6 +127,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton1"
+                style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/plane" />
@@ -121,8 +135,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="@string/flights_category_text" />
+                android:text="@string/flights_category_text"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
         </LinearLayout>
 
         <LinearLayout
@@ -133,6 +150,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
+                style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/hotel" />
@@ -140,8 +158,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="@string/hotels_category_text" />
+                android:text="@string/hotels_category_text"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
         </LinearLayout>
 
         <LinearLayout
@@ -152,6 +173,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
+                style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/passport" />
@@ -159,8 +181,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="@string/visa_category_text" />
+                android:text="@string/visa_category_text"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,6 +196,7 @@
 
             <ImageButton
                 android:id="@+id/imageButton4"
+                style="@android:style/Widget.Holo.ImageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/bus" />
@@ -178,8 +204,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="@string/buses_category_text" />
+                android:text="@string/buses_category_text"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
         </LinearLayout>
 
     </LinearLayout>
@@ -188,9 +217,12 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/button_recommended"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
@@ -199,11 +231,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="@string/button_see_all"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
 
 
     <LinearLayout
@@ -212,8 +246,9 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -225,7 +260,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/photo_2021_04_05_20_25_27" />
+                android:background="@drawable/mountain" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -265,7 +300,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="Mountain Safari"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
