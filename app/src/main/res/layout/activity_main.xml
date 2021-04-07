@@ -113,9 +113,11 @@
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/space"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -124,16 +126,14 @@
             android:id="@+id/linearLayout3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="8">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
                 android:orientation="vertical"
-                android:padding="5dp"
-                android:weightSum="2">
+                android:padding="5dp">
 
                 <!-- <ImageButton
                 android:id="@+id/imageButton1"
@@ -144,15 +144,14 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:background="@drawable/bg_white_rounded"
                     android:drawableTop="@drawable/plane"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="@string/flights_category_text"
                     android:textColor="@color/white"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
@@ -160,8 +159,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
                 android:orientation="vertical"
-                android:padding="5dp"
-                android:weightSum="1">
+                android:padding="5dp">
 
                 <!-- <ImageButton
                 android:id="@+id/imageButton2"
@@ -172,14 +170,14 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@drawable/bg_white_rounded"
                     android:drawableTop="@drawable/hotel"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="@string/hotels_category_text"
                     android:textColor="@color/white"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
@@ -187,8 +185,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
                 android:orientation="vertical"
-                android:padding="5dp"
-                android:weightSum="1">
+                android:padding="5dp">
 
                 <!--<ImageButton
                 android:id="@+id/imageButton3"
@@ -199,14 +196,14 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@drawable/bg_white_rounded"
                     android:drawableTop="@drawable/passport"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="@string/visa_category_text"
                     android:textColor="@color/white"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
             <LinearLayout
@@ -214,8 +211,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
                 android:orientation="vertical"
-                android:padding="5dp"
-                android:weightSum="1">
+                android:padding="5dp">
 
                 <!--            <ImageButton-->
                 <!--                android:id="@+id/imageButton4"-->
@@ -226,14 +222,14 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@drawable/bg_white_rounded"
                     android:drawableTop="@drawable/bus"
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:text="@string/buses_category_text"
                     android:textColor="@color/white"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="none" />
             </LinearLayout>
 
         </LinearLayout>
@@ -472,6 +468,14 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        tools:layout_editor_absoluteY="320dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
