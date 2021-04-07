@@ -326,7 +326,9 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom">
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -342,6 +344,8 @@
                                 android:fontFamily="sans-serif-medium"
                                 android:text="Beach Side"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <LinearLayout
@@ -352,7 +356,7 @@
                                 <ImageView
                                     android:id="@+id/imageView9"
                                     android:layout_width="20dp"
-                                    android:layout_height="20dp"
+                                    android:layout_height="match_parent"
                                     app:srcCompat="@drawable/map" />
 
                                 <TextView
@@ -362,7 +366,9 @@
                                     android:layout_gravity="bottom"
                                     android:fontFamily="sans-serif-medium"
                                     android:text="Hawaii"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -419,7 +425,9 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom">
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="15dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -435,6 +443,8 @@
                                 android:fontFamily="sans-serif-medium"
                                 android:text="Mountain Safari"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
                                 android:textStyle="bold" />
 
                             <LinearLayout
@@ -445,8 +455,7 @@
                                 <ImageView
                                     android:id="@+id/imageView3"
                                     android:layout_width="20dp"
-                                    android:layout_height="20dp"
-                                    android:layout_weight="1"
+                                    android:layout_height="match_parent"
                                     app:srcCompat="@drawable/map" />
 
                                 <TextView
@@ -454,10 +463,11 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="bottom"
-                                    android:layout_weight="1"
                                     android:fontFamily="sans-serif-medium"
                                     android:text="India"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                         </LinearLayout>
