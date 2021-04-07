@@ -313,6 +313,7 @@
                             android:layout_gravity="right"
                             android:layout_margin="5dp"
                             android:adjustViewBounds="false"
+                            android:alpha="0.8"
                             android:clickable="true"
                             android:elevation="5dp"
                             app:backgroundTint="@color/white_back"
@@ -412,6 +413,7 @@
                             android:layout_gravity="right"
                             android:layout_margin="5dp"
                             android:adjustViewBounds="false"
+                            android:alpha="0.8"
                             android:clickable="true"
                             android:elevation="5dp"
                             app:backgroundTint="@color/white_back"
@@ -483,9 +485,10 @@
         android:id="@+id/space"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
